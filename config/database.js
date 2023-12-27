@@ -1,6 +1,5 @@
 import knex from 'knex';
 import dotenv from 'dotenv';
-
 dotenv.config({ path: './config/.env' });
 
 const host = process.env.HOST;

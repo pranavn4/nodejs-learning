@@ -1,0 +1,30 @@
+[33mcommit 4645d70f31b76f5f0440b9dddac92f2643f59bb1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 9f8d629 40b9fcc
+Author: Pranav N <pranav.n@talview.com>
+Date:   Wed Dec 20 17:36:06 2023 +0530
+
+    Merge branch 'main' of https://github.com/pranavn4/nodejs-learning
+
+[33mcommit 9f8d629657654298abb4e2eb2c8dde78ce0fec83[m
+Author: Pranav N <pranav.n@talview.com>
+Date:   Wed Dec 20 17:34:14 2023 +0530
+
+    Remove node_modules from the repository
+
+[33mcommit 40b9fcc7ab0ea85ef6c2aeab264ea4e57750512d[m
+Author: pranavn4 <152139734+pranavn4@users.noreply.github.com>
+Date:   Wed Dec 20 17:31:48 2023 +0530
+
+    Delete config/.env
+
+[33mcommit 2727f8bff4b4369e00162d4f5c2d3d4f842b77b1[m
+Author: Pranav N <pranav.n@talview.com>
+Date:   Wed Dec 20 17:29:22 2023 +0530
+
+    Add .gitignore to ignore .env file
+
+[33mcommit 9b0dbaaf23dec647ef60013ec1f55bc0d9b8a797[m
+Author: Pranav N <pranav.n@talview.com>
+Date:   Wed Dec 20 17:20:06 2023 +0530
+
+    first commit

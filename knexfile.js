@@ -1,29 +1,40 @@
 // Update with your config settings.
-module.exports = {
+import dotenv from 'dotenv';
+import path from 'path';
 
-  development: {
+dotenv.config({ path: "./config/.env" });
+
+const development = {
     client: 'pg',
-    connection:'postgres://localhost/jokes'
-  },
-
-  migrations: {
-      directory:__dirname+"/config/migration"
-  },
-
-  production: {
-    client: 'postgresql',
     connection: {
-      database: 'world',
-      user:     process.env.USER,
-      password: process.env.PASSWORD
-    },
-    pool: {
-      min: 2,
-      max: 10
+        host: process.env.HOST,
+        port: process.env.PORT,
+        user: process.env.USER,
+        password: process.env.PASSWORD,
+        database: 'world',
     },
     migrations: {
-      tableName: 'knex_migrations'
-    }
-  }
-
+        directory: './config/db/migrations/',
+    },
+    seeds: {
+        directory:'./config/db/seeds',
+    },
 };
+
+const production = {
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
+    migrations: {
+        directory: './config/db/migrations',
+    },
+    seeds: {
+        directory: './config/db/seeds/production'
+    },
+};
+
+const environment = process.env.NODE_ENV || 'development';
+
+export default {
+    development,
+    production,
+}[environment];
